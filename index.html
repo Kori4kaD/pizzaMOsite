@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PizzaMo</title>
+    <script>
+      // Проверяем, существует ли страница, иначе перенаправляем на 404.html
+      document.addEventListener('DOMContentLoaded', function() {
+          fetch(window.location.href)
+              .then(response => {
+                  if (!response.ok) {
+                      window.location.href = '/404.html'; // Перенаправляем на страницу 404
+                  }
+              });
+      });
+  </script>
+    <link rel="icon" href="images/logo_site1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
+  </head>
+  <body id="body">
+    <div class="preloader">
+      <div class="pre_img">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item two"></div>
+          <div class="preloader__item three"></div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="container">
+        <div class="header_line_one" id="header_line_one">
+          <div class="logo">
+            <a href="/">
+              <img src="images/logo_site1.png" />
+            </a>
+          </div>
+          <div class="nav_menu">
+            <nav>
+              <ul class="menu" id="headerNavMenu">
+                <li><a href="/">Головна</a></li>
+                <li><a href="/#anchor1">Про нас</a></li>
+                <li><a href="/pizza">Піцца меню</a></li>
+                <li><a href="/restoran">Меню кухні</a></li>
+                <li><a href="/#anchor3">Доставка і оплата</a></li>
+                <li><a href="/#anchor4">Контакти</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="toggle-wrap" id="openMobileMenu"></div>
+        </div>
+        <div class="header_line_two">
+          <h1>PizzaMO</h1>
+          <h2 class="gold-text">Запечена з любов'ю!</h2>
+
+          <p>
+            Pizza Mo - це місце, де аромати та смаки стають справжніми. Наша
+            кухня - це джерело затишку, де піклуються про кожен інгредієнт. Ми
+            пишаємося якістю наших продуктів, обираючи лише найсвіжіші та
+            найсмачніші складові для наших піц, щоб кожен відвідувач міг
+            насолоджуватися найкращим.
+          </p>
+          <a href="/pizza/"> <button>Обрати піцу</button></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="about_us">
+        <a id="anchor1"></a>
+        <div class="container">
+          <div class="about_us_text">
+            <h2 class="gold-text">Про нас</h2>
+            <p>
+              Pizza Mo - це сімейна затишна піцерія з власною кухнею, де можна
+              відпочити на відкритій терасі або в залі,з приватною парковкою.
+              Наші кухарі завжді раді приготувати вам найсмачнішу піцу, а також
+              нададуть можливість скуштувати справжньої закарпатської кухні.
+              Аутентичні страви, дбайливо приготовані з найсвіжіших продуктів з
+              любов'ю і натхненням. Доповненням відпочинку може стати лазня з
+              басейном і зоною відпочинку. До нас варто завітати,щоб відчути
+              справжій дух Закарпаття.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="slideshow-container2">
+          <div class="mySlides2">
+            <img class="img2" src="images/pizza_small4.png" />
+            <div class="mySliders2_text">
+              <p>
+                Смак, що зачаровує! Наша піца відзначається неймовірним смаком
+                та ароматом, які перенесуть вас на вулиці Неаполя.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides2">
+            <img class="img2" src="images/pizza_small1.png" />
+            <div class="mySliders2_text">
+              <p>
+                Наша піца - це справжнє шедевр італійської кухні, створена з
+                любов'ю та увагою до деталей.Насолоджуйся смаком Італії прямо
+                вдома.
+              </p>
+            </div>
+          </div>
+          <div class="mySlides2 fade">
+            <img class="img2" src="images/pizza_small2.png" />
+            <div class="mySliders2_text">
+              <p>
+                Хрусткий корж, ніжні начинки - мрія будь-якого гурмана.
+                Спробуйте справжню гастрономічну витонченість!
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides2 fade">
+            <img class="img2" src="images/pizza_small3.png" />
+            <div class="mySliders2_text">
+              <p>
+                Наші піци готуються з натуральних інгредієнтів, щоб ви завжди
+                відчували справжній смак італійської кухні. Смакуйте якісну
+                піцу, яка не залишить вас байдужими!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="pizzaStart">
+        <div class="pizza_tittle">
+          <img class="leaf1" src="images/leaf4.png" />
+          <h2 class="gold-text">Піца меню</h2>
+          <img class="leaf2" src="images/leaf4.png" />
+        </div>
+        <div class="container pizzaMemu" id="pizza" pizzaMemu>
+          <div class="product">
+            <img src="images/menu_pizza1.png" />
+            <div class="product_text">
+              <h3>Гавайська</h3>
+              <p class="ingridients">
+                <b>Склад:</b> томатна основа, моцарела, куряча шинка, ковбаса,
+                ананас, помідори, кукурудза
+              </p>
+              <h5><b>Ціна: 32см</b>/180грн</h5>
+              <h5><b>Ціна: 45см</b>/180грн</h5>
+            </div>
+           
+          </div>
+          <div class="product">
+            <img src="images/menu_pizza2.png" />
+            <div class="product_text">
+              <h3>Кантрі</h3>
+              <p class="ingridients">
+                <b>Склад:</b> томатна основа, моцарела, куряча шинка, ковбаса,
+                ананас, помідори, кукурудза
+              </p>
+              <h5><b>Ціна: 32см</b>/180грн</h5>
+              <h5><b>Ціна: 45см</b>/180грн</h5>
+            </div>
+           
+          </div>
+          <div class="product">
+            <img src="images/menu_pizza3.png" />
+            <div class="product_text">
+              <h3>Бекон</h3>
+              <p class="ingridients">
+                <b>Склад:</b> томатна основа, моцарела, куряча шинка, ковбаса,
+                ананас, помідори, кукурудза
+              </p>
+              <h5><b>Ціна: 32см</b>/180грн</h5>
+              <h5><b>Ціна: 45см</b>/180грн</h5>
+            </div>
+           
+          </div>
+          <div class="product">
+            <img src="images/menu_pizza8.png" />
+            <div class="product_text">
+              <h3>Сирна</h3>
+              <p class="ingridients">
+                <b>Склад:</b> томатна основа, моцарела, куряча шинка, ковбаса,
+                ананас, помідори, кукурудза
+              </p>
+              <h5><b>Ціна: 32см</b>/180грн</h5>
+              <h5><b>Ціна: 45см</b>/180грн</h5>
+            </div>
+           
+          </div>
+        </div>
+        <a class="pizzaBtn_link" href="/pizza/"><button class="pizzaBtn">Дивитись всі</button></a>
+      </section>
+
+      <section>
+        <a id="anchor3"></a>
+        <div class="container pay">
+          <div class="pay_text">
+            <h2 class="gold-text">Доставка і оплата</h2>
+            <p>
+              Ми завжді раді приймати гостей у себе в закладі,але іноді гаряча
+              смачна вечеря необхідна саме вдома. Тому ми легко і зручно для вас
+              організуємо доставку за найкоротший термін з можливістю оплатити
+              замовлення при отриманні готівкою або на карту банку безготівковим
+              платежем. Всі подробиці замовлення та доставки обговорюються по
+              телефону або в наших меседжерах. Обирайте найзручніший спосіб
+              замовлення: дзвінок або чат, і ми раді будемо його виконати.
+            </p>
+          </div>
+          <img src="images/pizza_two.png" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer_info">
+        <a id="anchor4"></a>
+        <div class="adress">
+          <h3 class="gold-text">Наша адреса</h3>
+          <p>Закарпатська обл</p>
+          <p>Ужгородський р-н</p>
+          <p>с.Невицьке</p>
+          <p>вул.Центральна 38А</p>
+          <button>
+            <a href="https://maps.app.goo.gl/b33vJPrjF72dvbeC7" target="blank"
+              >Показати на мапі</a
+            >
+          </button>
+        </div>
+        <div class="contacts_order">
+          <div class="call">
+            <a href="tel:0950736241">
+              <img src="images/telephone1.png" />
+            </a>
+            <div class="phone">
+              <a href="tel:0950736241"><h5>0950736241</h5></a>
+              <a href="tel:0992351106"><h5>0992351106</h5></a>
+            </div>
+          </div>
+          <div class="contacts_link">
+            <a
+              href="https://invite.viber.com/?g=1URyMvsOjVLoWL1f7aEclofqrUJeNNYQ"
+              target="_blank"
+              ><img src="images/viber.png"
+            /></a>
+            <a href="https://t.me/Kori4ka_D" target="_blank"
+              ><img src="images/telegram.png"
+            /></a>
+            <a href="https://www.instagram.com/pizza_mo_" target="_blank"
+              ><img src="images/instagram.png"
+            /></a>
+          </div>
+        </div>
+        <p>
+          &copy; 2024 Pizza MO. Created by
+          <a href="https://t.me/Kori4ka_D" target="_blank">KoricaWEB</a>
+        </p>
+      </div>
+      <div class="btn-up btn-up_hide"></div>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

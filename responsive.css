@@ -1,0 +1,171 @@
+
+@media (max-width: 1270px) {
+    .header_line_two{
+        margin-top: 42px;  
+    }
+ }
+
+ @media (max-width: 1052px) {
+    .header_line_two{
+        margin-top: 20px;  
+    }
+ }
+ @media (min-width: 1052px) {
+  button:hover{
+    background-color: #008000;
+    color: var(--textColor);
+  }
+  button:hover a{
+    color: var(--textColor);
+  }
+  li a:hover{
+    color:var(--green) ;
+  }
+}
+@media (max-width: 860px) {  
+   header {
+    background-image: url(images/baner2_mob.png);
+   }
+   header {
+    background-image: url(images/baner3_mob.png);
+   }
+    .logo p{
+      font-size: 12px;
+    }
+    .logo a{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+    .header_line_one {
+      position: relative;
+      width: 100%;
+      min-width: 0px;
+      justify-content: space-between;
+    } 
+    .header_line_one.open{
+      /* height: 270px; */
+     align-items: flex-start;
+    }
+    .toggle-wrap {
+      width: 50px;
+      height: 50px;
+      display: flex;
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      background-image: url(images/menu1.png);
+      background-repeat: no-repeat;
+      background-size: 90%;
+      cursor: pointer;
+      z-index: 2;
+    }
+    .toggle-wrap.open  {
+      background-image: url(images/close.png);
+      background-size: contain;
+    }
+  
+    .menu {
+      display: none;
+    }
+    .menu.show {
+      display: flex;
+      row-gap: 17px;
+      flex-direction: column;
+      top: 101px;
+      position: absolute;
+      left: 11vw;
+      background-image: url(images/fon_nav_menu.png);
+      background-size: contain;
+      border-radius: 20px;
+    border: 1px solid gray;
+      padding: 15px;
+  width: 70vw;
+  z-index: 2;
+    }
+    .header_line_two {
+      width: 80%;
+      margin-top:34px;
+      font-size: 13px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color:#000000a6;
+      padding: 15px;
+      border-radius: 20px;
+    }
+    .header_line_two p {
+     
+      font-size: 13px;
+    }
+    .about_us_text {
+      width: 100%;
+      font-size: 13px;
+    }
+    .mySlides2.active{
+      flex-direction: column;
+    }
+    .img2{
+      width: 90vw;
+    }
+    .mySliders2_text {
+      width: 90vw;
+      font-size: 13px;
+    }
+    .pizzaMemu {
+      justify-content: center;
+    }
+    .btn-up {
+      right: 2vw;
+      bottom: 4vh;
+    }
+    .pay{
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    .pay_text{
+      width: 90%;
+      font-size: 13px;
+    }
+    .pay img {
+      width: 75%;
+    }
+    footer {
+      justify-content: center;
+    }
+    .adress {
+      font-size: 14px;
+    }
+    button {
+      font-size: 13px;
+    }
+    .additive_list {
+      width: 80%;
+    }
+  }
+  @media (max-width: 630px) {
+    .souce {
+      width: 300px;
+    }
+    .additive {
+      background-size: inherit;
+      background-repeat: repeat-y;
+    }
+    .pizzaBtn_link {
+     
+      width: 80%;
+    }
+  }
+  @media (max-width: 600px) { 
+.modal {
+  width: 90%;
+}
+.modal h1{
+  font-size: 24px;
+}
+   }
+   @media (max-width: 330px) {  
+    .modal h1{
+      font-size: 20px;
+    }
+   }
